@@ -1,0 +1,49 @@
+.header {
+	&-lvl-1 {
+		background-color: #d7d5d2;
+		padding: 9px 0;
+	}
+	&-lvl-2 {
+		overflow: hidden;
+		padding: 32px 0 5px 0;
+		border-bottom: 1px solid #eceae8;
+		background: url(../img/bg/top-left-illust.png) no-repeat left top;
+		p {
+			font-size: 30px;
+			.sr;
+			color:#909090;
+			margin-top: 20px;
+			span {
+				padding: 14px 26px;
+				background: url(../img/images/refill-count-badge.png) no-repeat; 
+			}
+		}
+		nav {
+			float: none;
+			background-color: #fff;
+			border: none;
+			margin-bottom: 0;
+		}
+		.navbar-nav {
+			float: none;
+			margin: 14px -20px 0 -20px;
+			padding: 0;
+			display: flex;
+			justify-content:space-between;
+			&:before,
+			&:after {
+				content: none;
+			}
+			li {
+				vertical-align: bottom;
+				a {
+					font-size: 18px;
+					color:@gray;
+				}
+				&:hover {
+					color:#77b56b;
+				}
+			}
+		}
+	}
+}
