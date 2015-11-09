@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en_EU">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="ru-RU">
+	<meta name="robots" content="index, follow">
+	<link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='assets/css/style.min.css' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body >
+	<div class="sticky-page">
+		
+		<section class="header">
+			<section class="header-lvl-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-md-offset-2">
+							<form action="" class="form-search">
+								<input type="search" placeholder="Search">
+							</form>
+						</div>
+						<div class="col-md-1 text-right">
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img src="assets/img/icons/wishlist-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/wishlist-icon-wht.png" class="opened" alt="">
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu1">
+									<form class="header-form text-center form-send" data-toggle="validator" action="" method="post" role="form" data-form="send">
+										<p class="text-uppercase">log in<span>to save and access your favorites</span></p>
+										<img src="assets/img/icons/login-doodle.png" alt="">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="text" class="form-control my-input" placeholder="USERNAME OR EMAIL" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="PASSWORD" class="form-control my-input" placeholder="PASSWORD" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<div class="checkbox">
+															<input type="checkbox" name="optionsRadios" id="checkbox1">
+															<label for="checkbox1">
+																Keep me signed in.
+															</label>
+														</div>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN</button>
+													<p class="header-form-p"><a href="">Forgot password?</a></p>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN WITH FACEBOOK</button>
+													<p>I don’t have an account yet.<a href=""><span class="tdu">Create one</span></a></p>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1 text-right">
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img src="assets/img/icons/user-account-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/user-acct-icon-wht.png" class="opened" alt="">
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu2">
+									<form class="header-form text-center form-send" data-toggle="validator" action="" method="post" role="form" data-form="send">
+										<p class="text-uppercase">log in<span>to save and access your favorites</span></p>
+										<img src="assets/img/icons/login-doodle.png" alt="">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="text" class="form-control my-input" placeholder="USERNAME OR EMAIL" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="PASSWORD" class="form-control my-input" placeholder="PASSWORD" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<div class="checkbox">
+															<input type="checkbox" name="optionsRadios" id="checkbox1">
+															<label for="checkbox1">
+																Keep me signed in.
+															</label>
+														</div>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN</button>
+													<p class="header-form-p"><a href="">Forgot password?</a></p>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN WITH FACEBOOK</button>
+													<p>I don’t have an account yet.<a href=""><span class="tdu">Create one</span></a></p>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1 text-right">
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="count-btn">
+									<img src="assets/img/icons/shopping-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/shopping-cart-icon-wht.png" class="opened" alt="">
+									<span class="count-items">2</span>
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu3">
+									<div class="header-cart">
+										<div class="header-cart-header">
+											<a href="#"><i class="icon remove"></i></a>
+										</div>
+										<div class="header-cart-body">
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+										</div>
+										<div class="header-cart-footer">
+											<div class="my-flex">
+												<div><p class="header-cart-total-items">2 ItemS</p></div>
+												<div><p class="header-cart-total-price"><span>total</span> <span>$29.00</span></p></div>
+											</div>
+											<div class="btn-checkOut text-center">
+												<a href="#" class="btn btn-success">view cart</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="header-lvl-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<a href=""><img src="assets/img/images/trs-logo.png" alt=""></a>
+						</div>
+						<div class="col-md-10">
+							<div class="row">
+								<div class="col-md-12 text-right">
+									<p>Current refill count <span>16,228</span></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse" id="navbar">
+											<ul class="nav navbar-nav text-uppercase">
+												<li class="dropdown my-dropdown-menu-list">
+													<a class="button" href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Bath</a>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+														<ul>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+
+														</ul>
+													</div>
+												</li>
+												<li class="dropdown my-dropdown-menu-list">
+													<a class="button" href="#" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">account</a>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenu5">
+														<ul>
+															<li>
+																<a href="#">My Account</a>
+															</li>
+															<li>
+																<a href="#">My Cart</a>
+															</li>
+															<li>
+																<a href="#">My orders</a>
+															</li>
+															<li>
+																<a href="#">Log out</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li><a class="" href="#">Home </a></li>
+												<li><a class="" href="#">Clean</a></li>
+												<li><a class="" href="#">Create</a></li>
+												<li><a class="" href="#" >Learn</a></li>
+												<li><a class="" href="#">About</a></li>
+												<li><a class="" href="#">Contact</a></li>
+											</ul>
+										</div><!-- /.navbar-collapse -->
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		
+		<section class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 text-center">
+						<div class="row">
+							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
+								<div class="customization-pick-btn one active">
+									<p>Pick Your Product</p>
+									<a href="#"><div></div></a>
+								</div>
+							</div>
+							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
+								<div class="customization-pick-btn two">
+									<p>Choose a Container</p>
+									<a href="#"><div></div></a>
+								</div>
+							</div>
+							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
+								<div class="customization-pick-btn three">
+									<p>Select Your Scents</p>
+									<a href="#"><div></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="content">
+			<div class="customization-filter-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+							<div class="row">
+								<div class="col-xs-12 col-md-6 col-sm-6">
+									<h2 class="text-uppercase">SCENTS</h2>
+								</div>
+								<div class="col-xs-12 col-md-6 col-sm-6 text-right">
+									<h3><span><i class="icon tips"></i></span><span>Scenting tips</span></h3>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="customization-filter-form">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<div class="offset-grid no-offset && border-light">
+								<form class="form-send form-scents" data-toggle="validator" action="" method="post"  data-form="send">
+									<div class="row">
+										<div class="col-xs-12 col-md-12 col-sm-12">
+											<div class="form-title text-center">
+												<h3>Scent of the Month</h3>
+												<h2>Rosemary & Frosting</h2>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<!--item 1-->
+										<div class="col-xs-12 col-md-6 col-sm-6 reset-right-pad">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<div class="form-scents-border">
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																</h3><h3 class="form-scents-title small-line"><span>1</span> Choose up to 6 scents from these menus</h3>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																		<br>
+																			<div class="radio center normal">
+																				<input type="radio" name="optionsRadios" id="radio1">
+																				<label for="radio1">
+																					No scents for me please, I like to keep it simple.
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<p class="form-subtitle">Start with one of our favorite blends</p>
+																			<div class="dropdown form-dropdown">
+																				<a class="btn btn-success" data-target="#dLabel" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+																					<span>BLENDS WE LOVE</span>
+																					<span><i class="glyphicon glyphicon-menu-right"></i></span>
+																				</a>
+																				<ul class="dropdown-menu" aria-labelledby="dLabel">
+																					<li>
+																						<a href="#">1</a>
+																					</li>
+																					<li>
+																						<a href="#">2</a>
+																					</li>
+																					<li>
+																						<a href="#">3</a>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<p class="form-subtitle">Or start from scratch</p>
+																			<div class="dropdown form-dropdown">
+																				<a class="btn btn-success" data-target="#dLabel" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+																					<span>LIST OF SCENTS</span>
+																					<span><i class="glyphicon glyphicon-menu-right"></i></span>
+																				</a>
+																				<ul class="dropdown-menu" aria-labelledby="dLabel">
+																					<li>
+																						<a href="#">1</a>
+																					</li>
+																					<li>
+																						<a href="#">2</a>
+																					</li>
+																					<li>
+																						<a href="#">3</a>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+
+																			<div class="choice-type">
+																				<div class="inner">
+																					<div><p>Filter scent list:</p></div>
+																					<div>
+																						<div class="radio center normal">
+																							<input type="radio" name="optionsRadios" id="radio2">
+																							<label for="radio2">
+																								By type
+																							</label>
+																						</div>
+																					</div>
+																					<div>
+																						<div class="radio center normal">
+																							<input type="radio" name="optionsRadios" id="radio3">
+																							<label for="radio3">
+																								By use
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<div class="reference">
+																				<p><a href="#">Scent reference page</a> (opens in a new tab)</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!--item 1 END-->
+										<!--item 2-->
+										<div class="col-xs-12 col-md-6 col-sm-6 reset-left-pad">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<div class="form-scents-border">
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<h3 class="form-scents-title small-line"><span>2</span>Drag scents to place in order of desired strength with the strongest at the top</h3>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12">
+															<br>
+																<ul data-item="sort" class="sortable">
+																	<li class="ui-state-default">
+																		<div class="sort">
+																			<div><p>Basil</p></div>
+																			<div>
+																				<i class="icon menu">
+																					<span></span>
+																					<span></span>
+																					<span></span>
+																				</i>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="ui-state-default">
+																		<div class="sort">
+																			<div><p>Basil</p></div>
+																			<div>
+																				<i class="icon menu">
+																					<span></span>
+																					<span></span>
+																					<span></span>
+																				</i>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="ui-state-default">
+																		<div class="sort">
+																			<div><p>Basil</p></div>
+																			<div>
+																				<i class="icon menu">
+																					<span></span>
+																					<span></span>
+																					<span></span>
+																				</i>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="ui-state-default">
+																		<div class="sort">
+																			<div><p>Basil</p></div>
+																			<div>
+																				<i class="icon menu">
+																					<span></span>
+																					<span></span>
+																					<span></span>
+																				</i>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="ui-state-default">
+																		<div class="sort">
+																			<div><p>Basil</p></div>
+																			<div>
+																				<i class="icon menu">
+																					<span></span>
+																					<span></span>
+																					<span></span>
+																				</i>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																		<br>
+																			<div class="radio center normal">
+																				<input type="radio" name="optionsRadios" id="radio1">
+																				<label for="radio1">
+																					OR make all scents equal
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!--item 2 END-->
+									</div>
+									<div class="row">
+										<!--item 3-->
+										<div class="col-xs-12 col-md-6 col-sm-6 reset-right-pad">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<div class="form-scents-border">
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<h3 class="form-scents-title small-line"><span>3</span>Choose an overall strength</h3>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<br>
+																			<div class="choice-type">
+																				<div class="inner">
+																					<div><p>Filter scent list:</p></div>
+																					<div>
+																						<div class="radio center normal">
+																							<input type="radio" name="optionsRadios" id="radio2">
+																							<label for="radio2">
+																								By type
+																							</label>
+																						</div>
+																					</div>
+																					<div>
+																						<div class="radio center normal">
+																							<input type="radio" name="optionsRadios" id="radio3">
+																							<label for="radio3">
+																								By use
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<h3 class="form-scents-title small-line">Any special instructions? (optional)</h3>
+																			<textarea name="" id="" cols="10" rows="10"></textarea>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!--item 3 END-->
+										<!--item 4-->
+										<div class="col-xs-12 col-md-6 col-sm-6 reset-left-pad">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<div class="form-scents-border">
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<h3 class="form-scents-title line-height-small"><span>4</span>Add a 1/16 oz vial of your scent<br>to boost the strength for $2.00?</h3>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12 text-center">
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																		<br>
+																			<div class="radio center normal">
+																				<input type="radio" name="optionsRadios" id="radio1">
+																				<label for="radio1">
+																					Please do!
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!--item 4 END-->
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="customization-chosen">
+							<div class="row">
+								<div class="col-xs-12 col-md-12 col-sm-12">
+									<h2 class="text-center text-uppercase">WHAT I’M MAKING</h2>
+								</div>
+							</div>
+							<div class="customization-chosen-header">
+								<div class="row">
+									<div class="col-xs-12 col-md-3 col-sm-3">
+										<h3>This product</h3>
+									</div>
+									<div class="col-xs-12 col-md-3 col-sm-3">
+										<h3>In this container</h3>
+									</div>
+									<div class="col-xs-12 col-md-3 col-sm-3">
+										<h3>With my scent blend</h3>
+									</div>
+									<div class="col-xs-12 col-md-3 col-sm-3">
+										
+									</div>
+								</div>
+							</div>
+							<div class="customization-chosen-body">
+								<div class="row my-flex">
+									<div class="col-xs-12 col-md-12 col-sm-12">
+										<div class="row my-flex">
+											<div class="col-xs-12 col-md-9 col-sm-9">
+												<div class="row my-flex b-bottom">
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Shampoo</p>
+															</div>
+															<div>
+																<p class="item-pror">.72/oz</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex with-img">
+															<div>
+																<div>
+																	<a href="#" class="delete"><i class="icon remove"></i></a>
+																	<p class="item-name">8 oz Clear Cosmo w/Silver Cap</p>
+																</div>
+																<div>
+																	<img src="assets/img/images/Containers/liquid-hand-soap-bag.jpg" alt="">
+																</div>
+															</div>
+															<div>
+																<p class="item-pror"> $2.49</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Basil Black Pepper Eucalyptus Blood Orange</p>
+															</div>
+															<div>
+																<p class="item-pror"> $2.00</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row my-flex b-bottom">
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Shampoo</p>
+															</div>
+															<div>
+																<p class="item-pror">.72/oz</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex with-img">
+															<div>
+																<div>
+																	<a href="#" class="delete"><i class="icon remove"></i></a>
+																	<p class="item-name">8 oz Clear Cosmo w/Silver Cap</p>
+																</div>
+																<div>
+																	<img src="assets/img/images/Containers/liquid-hand-soap-bag.jpg" alt="">
+																</div>
+															</div>
+															<div>
+																<p class="item-pror"> $2.49</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Basil Black Pepper Eucalyptus Blood Orange</p>
+															</div>
+															<div>
+																<p class="item-pror"> $2.00</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-3 col-sm-3 my-flex">
+												<div class="customization-chosen-total my-flex">
+													<div>
+														<h3 class="text-center text-uppercase">total</h3>
+													</div>
+													<div>
+														<h3 class="text-center text-uppercase">$10.25</h3>
+													</div>
+													<div>
+														<a href="#" class="btn btn-default text-center text-uppercase">ADD TO CART</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<p>SHOP</p>
+					<ul>
+						<li><a href="">Bath</a></li>
+						<li><a href="">Body</a></li>
+						<li><a href="">Home</a></li>
+						<li><a href="">Clean</a></li>
+						<li><a href="">Create</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<p>HELP</p>
+					<ul>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Shipping</a></li>
+						<li><a href="">Terms</a></li>
+						<li><a href="">Privacy</a></li>
+						<li><a href="">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<p>QUESTIONS?</p>
+					<p class="contact">805.765.9135<br/>Contact Us</p>
+					<p class="contact">Open every day<br/>10 am - 6 pm</p>
+				</div>
+				<div class="col-md-2">
+					<img src="assets/img/images/b-corp-logo.png" alt="">
+					<img src="assets/img/images/est-2010.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<p>JOIN OUR MAILING LIST</p>
+					<form action="">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-12">
+									<input type="text" class="form-control my-input" placeholder="YOUR EMAIL" required/>
+									<button type="submit" class="btn btn-success btn-footer">JOIN</button>
+								</div>
+								<div class="col-xs-12">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<a class="social" href=""><img src="assets/img/icons/fb-icon-def.png" alt=""></a>
+					<a class="social" href=""><img src="assets/img/icons/twitter-icon-def.png" alt=""></a>
+					<a class="social" href=""><img src="assets/img/icons/instagram-icon-def.png" alt=""></a>
+					<a class="social" href=""><img src="assets/img/icons/pinterest-icon-def.png" alt=""></a>
+					<a class="social" href=""><img src="assets/img/icons/google-icon-def.png" alt=""></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="copyright">&copy; Copyright 2015 The Refill Shoppe</p>
+				</div>
+			</div>
+		</div>
+	</section>
+<script type="text/javascript" src="assets/js/form.js"></script>
+<script type="text/javascript" src="assets/js/validator.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<!--подключаем бс3.2!-->
+
+<!--подключаем бс3.2!-->
+</body>
+
+</html>

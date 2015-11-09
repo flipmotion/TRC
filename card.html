@@ -21,21 +21,177 @@
 <body >
 	<div class="sticky-page">
 		
-		<section class="header">
+	<section class="header">
 			<section class="header-lvl-1">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-7 col-md-offset-2">
-							<a href=""><img src="assets/img/icons/search-header-lvl-1.png" alt=""></a>
+							<form action="" class="form-search">
+								<input type="search" placeholder="Search">
+							</form>
 						</div>
 						<div class="col-md-1 text-right">
-							<a href=""><img src="assets/img/icons/wishlist-header-lvl-1.png" alt=""></a>
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img src="assets/img/icons/wishlist-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/wishlist-icon-wht.png" class="opened" alt="">
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu1">
+									<form class="header-form text-center form-send" data-toggle="validator" action="" method="post" role="form" data-form="send">
+										<p class="text-uppercase">log in<span>to save and access your favorites</span></p>
+										<img src="assets/img/icons/login-doodle.png" alt="">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="text" class="form-control my-input" placeholder="USERNAME OR EMAIL" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="PASSWORD" class="form-control my-input" placeholder="PASSWORD" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<div class="checkbox">
+															<input type="checkbox" name="optionsRadios" id="checkbox1">
+															<label for="checkbox1">
+																Keep me signed in.
+															</label>
+														</div>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN</button>
+													<p class="header-form-p"><a href="">Forgot password?</a></p>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN WITH FACEBOOK</button>
+													<p>I don’t have an account yet.<a href=""><span class="tdu">Create one</span></a></p>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
 						<div class="col-md-1 text-right">
-							<a href=""><img src="assets/img/icons/user-account-header-lvl-1.png" alt=""></a>
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img src="assets/img/icons/user-account-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/user-acct-icon-wht.png" class="opened" alt="">
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu2">
+									<form class="header-form text-center form-send" data-toggle="validator" action="" method="post" role="form" data-form="send">
+										<p class="text-uppercase">log in<span>to save and access your favorites</span></p>
+										<img src="assets/img/icons/login-doodle.png" alt="">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="text" class="form-control my-input" placeholder="USERNAME OR EMAIL" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<input type="PASSWORD" class="form-control my-input" placeholder="PASSWORD" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<div class="checkbox">
+															<input type="checkbox" name="optionsRadios" id="checkbox1">
+															<label for="checkbox1">
+																Keep me signed in.
+															</label>
+														</div>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN</button>
+													<p class="header-form-p"><a href="">Forgot password?</a></p>
+													<button type="submit" class="btn btn-success btn-header-form">SIGN IN WITH FACEBOOK</button>
+													<p>I don’t have an account yet.<a href=""><span class="tdu">Create one</span></a></p>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
 						<div class="col-md-1 text-right">
-							<a href=""><img src="assets/img/icons/shopping-header-lvl-1.png" alt=""></a>
+							<div class="dropdown my-header-btn-dropdown">
+								<a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="count-btn">
+									<img src="assets/img/icons/shopping-header-lvl-1.png" class="closed" alt="">
+									<img src="assets/img/icons/shopping-cart-icon-wht.png" class="opened" alt="">
+									<span class="count-items">2</span>
+								</a>
+								<div class="dropdown-menu my-dropdown-menu" aria-labelledby="dropdownMenu3">
+									<div class="header-cart">
+										<div class="header-cart-header">
+											<a href="#"><i class="icon remove"></i></a>
+										</div>
+										<div class="header-cart-body">
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+											<div class="my-flex item">
+												<div>
+													<a href="#"><img src="assets/img/images/Soaps Bombs/citrusblossom wb.jpg" alt=""></a>
+												</div>
+												<div>
+													<p class="item-name">Aquamarine SoapRock</p>
+													<p class="item-count">Qty. 1</p>
+												</div>
+												<div>
+													<p class="item-price">$14.00</p>
+												</div>
+											</div>
+										</div>
+										<div class="header-cart-footer">
+											<div class="my-flex">
+												<div><p class="header-cart-total-items">2 ItemS</p></div>
+												<div><p class="header-cart-total-price"><span>total</span> <span>$29.00</span></p></div>
+											</div>
+											<div class="btn-checkOut text-center">
+												<a href="#" class="btn btn-success">view cart</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -68,8 +224,42 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 										<div class="collapse navbar-collapse" id="navbar">
 											<ul class="nav navbar-nav text-uppercase">
-												<li><a class="" href="#">Bath</a></li>
-												<li><a class="" href="#">Body</a></li>
+												<li class="dropdown my-dropdown-menu-list">
+													<a class="button" href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Bath</a>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+														<ul>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+															<li>
+																<a href="#">Salts/Soaks/Teas</a>
+															</li>
+
+														</ul>
+													</div>
+												</li>
+												<li class="dropdown my-dropdown-menu-list">
+													<a class="button" href="#" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">account</a>
+													<div class="dropdown-menu" aria-labelledby="dropdownMenu5">
+														<ul>
+															<li>
+																<a href="#">My Account</a>
+															</li>
+															<li>
+																<a href="#">My Cart</a>
+															</li>
+															<li>
+																<a href="#">My orders</a>
+															</li>
+															<li>
+																<a href="#">Log out</a>
+															</li>
+														</ul>
+													</div>
+												</li>
 												<li><a class="" href="#">Home </a></li>
 												<li><a class="" href="#">Clean</a></li>
 												<li><a class="" href="#">Create</a></li>

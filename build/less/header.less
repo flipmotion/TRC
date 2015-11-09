@@ -1,10 +1,56 @@
 .header {
+	
+	
 	&-lvl-1 {
 		background-color: #d7d5d2;
-		padding: 9px 0;
+		padding: 3px 0;
+		.text-right {
+			padding-top: 6px;
+		}
+		.form-search {
+			position: relative;
+			display: table;
+			&.focus {
+				&:after{
+					content: '';
+				}
+			}
+			&:after {
+				content: none;
+				height: 1px;
+				width: 80%;
+				background: #a8865a;
+				position: absolute;
+				bottom: 5px;
+				left: 31px;
+			}
+			input {
+				background: url(../img/icons/search-header-lvl-1.png) left center no-repeat;
+				border: none;
+				padding: 3px 3px 8px 29px;
+				outline: none;
+				.tr;
+				font-size: 16px;
+				&::-webkit-input-placeholder {color:transparent;}
+				&::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+				&:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+				&:-ms-input-placeholder  {color:transparent;}
+				&:focus {
+					border: none;
+					outline: none;
+					color: #747474;
+					padding: 3px 3px 8px 29px;
+					color: #747474;
+					&::-webkit-input-placeholder {color:#747474;}
+					&::-moz-placeholder          {color:#747474;}/* Firefox 19+ */
+					&:-moz-placeholder           {color:#747474;}/* Firefox 18- */
+					&:-ms-input-placeholder  {color:#747474;}
+				}
+			}
+		}
 	}
 	&-lvl-2 {
-		overflow: hidden;
+		//overflow: hidden;
 		padding: 32px 0 5px 0;
 		border-bottom: 1px solid #eceae8;
 		background: url(../img/bg/top-left-illust.png) no-repeat left top;
