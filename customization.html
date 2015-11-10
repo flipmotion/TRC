@@ -357,24 +357,37 @@
 		
 		<section class="content">
 			<div class="container">
+				<div class="row visible-xs">
+					<div class="col-xs-12 text-right">
+						<a href="#"><i class="icon view"></i></a>
+					</div>
+				</div>
+				<div class="row visible-xs">
+					<div class="col-xs-12 text-center">
+						<h4 class="text-uppercase">CHOOSE YOUR</h4>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 text-center">
 						<div class="row">
 							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
 								<div class="customization-pick-btn one active">
-									<p>Pick Your Product</p>
+									<p class="hidden-xs">Pick Your Product</p>
+									<p class="visible-xs">Product</p>
 									<a href="#"><div></div></a>
 								</div>
 							</div>
 							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
 								<div class="customization-pick-btn two">
-									<p>Choose a Container</p>
+									<p class="hidden-xs">Choose a Container</p>
+									<p class="visible-xs">Container</p>
 									<a href="#"><div></div></a>
 								</div>
 							</div>
 							<div class="col-xs-4 col-md-4 col-sm-4 text-center">
 								<div class="customization-pick-btn three">
-									<p>Select Your Scents</p>
+									<p class="hidden-xs">Select Your Scents</p>
+									<p class="visible-xs">Scents</p>
 									<a href="#"><div></div></a>
 								</div>
 							</div>
@@ -384,7 +397,7 @@
 			</div>
 		</section>
 		<section class="content">
-			<div class="customization-filter-top">
+			<div class="customization-filter-top hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
@@ -415,7 +428,45 @@
 					</div>
 				</div>
 			</div>
-			<div class="customization-filter-bottom">
+			<div class="customization-filter-top-for-mobile visible-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="customization-filter-top-for-mobile-item">
+									<button class="btn btn-default btn-green collapsed" type="button" data-toggle="collapse" data-target="#customization" aria-expanded="false" aria-controls="fItcustomizationem1">
+										<span class="text-uppercase">productS</span>
+										<span><i class="icon expand-on white open"></i><i class="icon expand-off white closed"></i></span>
+									</button>
+									<div class="collapse b-bottom" id="customization">
+										<ul>
+											<li>
+												<div class="customization-filter-top-for-mobile-item">
+													<button class="btn btn-default btn-inner collapsed" type="button" data-toggle="collapse" data-target="#customization2" aria-expanded="false" aria-controls="customization2">
+														<span>Bath</span>
+														<span><i class="icon expand-on  open"></i><i class="icon expand-off closed"></i></span>
+													</button>
+													<div class="collapse" id="customization2">
+														<ul>
+															<li class="active"><a href="#">Soaps/Bombs</a></li>
+															<li><a href="#">Soaps/Bombs</a></li>
+															<li><a href="#">Soaps/Bombs</a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li class="active"><a href="#">Soaps/Bombs</a></li>
+											<li><a href="#">Soaps/Bombs</a></li>
+											<li><a href="#">Soaps/Bombs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="customization-filter-bottom hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
@@ -455,7 +506,7 @@
 									<div data-item="case">
 										<div class="form-group">
 											<div class="row">
-												<div class="col-xs-12 col-md-6 col-sm-6">
+												<div class="col-xs-6 col-md-6 col-sm-6">
 													<div class="radio">
 														<input type="radio" name="optionsRadios" id="radio1">
 														<label for="radio1">
@@ -463,7 +514,7 @@
 														</label>
 													</div>
 												</div>
-												<div class="col-xs-12 col-md-6 col-sm-6">
+												<div class="col-xs-6 col-md-6 col-sm-6">
 													<div class="my-flex">
 														<div>
 															<p class="customization-price text-right">.72/oz</p>
@@ -500,15 +551,15 @@
 									<div data-item="case">
 										<div class="form-group">
 											<div class="row">
-												<div class="col-xs-12 col-md-6 col-sm-6">
+												<div class="col-xs-6 col-md-6 col-sm-6">
 													<div class="radio">
-														<input type="radio" name="optionsRadios" id="radio2">
-														<label for="radio2">
+														<input type="radio" name="optionsRadios" id="radio1">
+														<label for="radio1">
 															Shampoo
 														</label>
 													</div>
 												</div>
-												<div class="col-xs-12 col-md-6 col-sm-6">
+												<div class="col-xs-6 col-md-6 col-sm-6">
 													<div class="my-flex">
 														<div>
 															<p class="customization-price text-right">.72/oz</p>
@@ -542,293 +593,96 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio3">
-													<label for="radio3">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
+									<div data-item="case">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-6 col-md-6 col-sm-6">
+													<div class="radio">
+														<input type="radio" name="optionsRadios" id="radio1">
+														<label for="radio1">
+															Shampoo
+														</label>
 													</div>
 												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio4">
-													<label for="radio4">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
+												<div class="col-xs-6 col-md-6 col-sm-6">
+													<div class="my-flex">
+														<div>
+															<p class="customization-price text-right">.72/oz</p>
+														</div>
+														<div>
+															<a href="#" class="customization-filter-form-more" data-item="show-case"><i class="icon info"></i></a>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio5">
-													<label for="radio5">
-														Shower Gel
-													</label>
+										<div class="form-group my-hidden" data-item="item">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<a href="#" class="close"><i class="icon remove" data-item="remove-modal"></i></a>
 												</div>
 											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio6">
-													<label for="radio6">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<h4><strong>Shampoo</strong></h4>
+													<p>78% Organic Content - Vegan - Sulfate Free & Paraben free - Scentable
+														Aloe barbadensis (Organic Aloe) Juice, Lavandula angustifolia (Organic Lavender)
+														Distillate, Anthemis nobilis (Roman Chamomile) Distillate, Sodium Lauryl
+														Sulfoacetate, Cocamidopropyl Betaine, Disodium Laureth Sulfosuccinate, Kosher Vegetable Glycerin, Phenoxyethanol, Hydrolyzed Wheat Proteins, Calcium d-Pantothenate (Pro-Vitamin B5), Rosa mosqueta (Rosehip) Seed Oil, Simmondsia chinensis (Jojoba) Oil, Tocopherol (Vitamin E), Tetrasodium EDTA, Citric Acid  pH 5.5.
+													</p>
+													<p>
+														<strong>Warning:</strong> “Caution--Use only as directed. Extensive use or prolonged exposure may cause irritation to skin and urinary tract. Discontinue use if rash, redness or itching occurs. Consult your physician if irritation persists. Keep out of reach of children”.
+													</p>
+													<p><strong>Tip:</strong> Pre-lather shampoo in hands before massaging into scalp. </p>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio7">
-													<label for="radio7">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
+									<div data-item="case">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-6 col-md-6 col-sm-6">
+													<div class="radio">
+														<input type="radio" name="optionsRadios" id="radio1">
+														<label for="radio1">
+															Shampoo
+														</label>
 													</div>
 												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio8">
-													<label for="radio8">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
+												<div class="col-xs-6 col-md-6 col-sm-6">
+													<div class="my-flex">
+														<div>
+															<p class="customization-price text-right">.72/oz</p>
+														</div>
+														<div>
+															<a href="#" class="customization-filter-form-more" data-item="show-case"><i class="icon info"></i></a>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio8">
-													<label for="radio8">
-														Shower Gel
-													</label>
+										<div class="form-group my-hidden" data-item="item">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<a href="#" class="close"><i class="icon remove" data-item="remove-modal"></i></a>
 												</div>
 											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio9">
-													<label for="radio9">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<h4><strong>Shampoo</strong></h4>
+													<p>78% Organic Content - Vegan - Sulfate Free & Paraben free - Scentable
+														Aloe barbadensis (Organic Aloe) Juice, Lavandula angustifolia (Organic Lavender)
+														Distillate, Anthemis nobilis (Roman Chamomile) Distillate, Sodium Lauryl
+														Sulfoacetate, Cocamidopropyl Betaine, Disodium Laureth Sulfosuccinate, Kosher Vegetable Glycerin, Phenoxyethanol, Hydrolyzed Wheat Proteins, Calcium d-Pantothenate (Pro-Vitamin B5), Rosa mosqueta (Rosehip) Seed Oil, Simmondsia chinensis (Jojoba) Oil, Tocopherol (Vitamin E), Tetrasodium EDTA, Citric Acid  pH 5.5.
+													</p>
+													<p>
+														<strong>Warning:</strong> “Caution--Use only as directed. Extensive use or prolonged exposure may cause irritation to skin and urinary tract. Discontinue use if rash, redness or itching occurs. Consult your physician if irritation persists. Keep out of reach of children”.
+													</p>
+													<p><strong>Tip:</strong> Pre-lather shampoo in hands before massaging into scalp. </p>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio10">
-													<label for="radio10">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio11">
-													<label for="radio11">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio12">
-													<label for="radio12">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio13">
-													<label for="radio13">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="radio">
-													<input type="radio" name="optionsRadios" id="radio14">
-													<label for="radio14">
-														Shower Gel
-													</label>
-												</div>
-											</div>
-											<div class="col-xs-12 col-md-6 col-sm-6">
-												<div class="my-flex">
-													<div>
-														<p class="customization-price text-right">.72/oz</p>
-													</div>
-													<div>
-														<a href="#" class="customization-filter-form-more"><i class="icon info"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
 								</form>
 							</div>
 						</div>
@@ -863,98 +717,107 @@
 							</div>
 							<div class="customization-chosen-body">
 								<div class="row my-flex">
-									<div class="col-xs-12 col-md-3 col-sm-3">
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<a href="#" class="delete"><i class="icon remove"></i></a>
-												<p class="item-name">Shampoo</p>
+									<div class="col-xs-12 col-md-12 col-sm-12">
+										<div class="row my-flex">
+											<div class="col-xs-12 col-md-9 col-sm-9">
+												<div class="row my-flex b-bottom">
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Shampoo</p>
+															</div>
+															<div>
+																<p class="item-pror">.72/oz</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex with-img">
+															<div>
+																<div>
+																	<a href="#" class="delete"><i class="icon remove"></i></a>
+																	<p class="item-name">8 oz Clear Cosmo w/Silver Cap</p>
+																</div>
+																<div>
+																	<img src="assets/img/images/Containers/liquid-hand-soap-bag.jpg" alt="">
+																</div>
+															</div>
+															<div>
+																<p class="item-pror"> $2.49</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Basil Black Pepper Eucalyptus Blood Orange</p>
+															</div>
+															<div>
+																<p class="item-pror"> $2.00</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row my-flex b-bottom">
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Shampoo</p>
+															</div>
+															<div>
+																<p class="item-pror">.72/oz</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex with-img">
+															<div>
+																<div>
+																	<a href="#" class="delete"><i class="icon remove"></i></a>
+																	<p class="item-name">8 oz Clear Cosmo w/Silver Cap</p>
+																</div>
+																<div>
+																	<img src="assets/img/images/Containers/liquid-hand-soap-bag.jpg" alt="">
+																</div>
+															</div>
+															<div>
+																<p class="item-pror"> $2.49</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-md-4 col-sm-4">
+														<div class="customization-chosen-item my-flex">
+															<div>
+																<a href="#" class="delete"><i class="icon remove"></i></a>
+																<p class="item-name">Basil Black Pepper Eucalyptus Blood Orange</p>
+															</div>
+															<div>
+																<p class="item-pror"> $2.00</p>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div>
-												<p class="item-pror">.72/oz</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<a href="#" class="delete"><i class="icon remove"></i></a>
-												<p class="item-name">Shampoo</p>
-											</div>
-											<div>
-												<p class="item-pror">.72/oz</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<a href="#" class="delete"><i class="icon remove"></i></a>
-												<p class="item-name">Shampoo</p>
-											</div>
-											<div>
-												<p class="item-pror">.72/oz</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<a href="#" class="delete"><i class="icon remove"></i></a>
-												<p class="item-name">Shampoo</p>
-											</div>
-											<div>
-												<p class="item-pror">.72/oz</p>
+											<div class="col-xs-12 col-md-3 col-sm-3 my-flex">
+												<div class="customization-chosen-total my-flex">
+													<div>
+														<h3 class="text-center text-uppercase">total</h3>
+													</div>
+													<div>
+														<h3 class="text-center text-uppercase">$10.25</h3>
+													</div>
+													<div>
+														<a href="#" class="btn btn-default text-center text-uppercase">ADD TO CART</a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-3 col-sm-3">
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-md-3 col-sm-3">
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-										<div class="customization-chosen-item my-flex">
-											<div>
-												<p class="item-name">With my scent blend</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-md-3 col-sm-3 my-flex">
-										<div class="customization-chosen-total my-flex">
-											<div>
-												<h3 class="text-center text-uppercase">total</h3>
-											</div>
-											<div>
-												<a href="#" class="btn btn-default text-center text-uppercase">ADD TO CART</a>
-											</div>
-										</div>
-									</div>
+									
+									
 								</div>
 							</div>
 						</div>

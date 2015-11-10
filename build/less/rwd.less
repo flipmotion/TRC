@@ -131,6 +131,29 @@
 			margin-bottom: 20px;
 		}
 		/*home END*/
+		/*category*/
+		.item {
+			&-category {
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.h2-category {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		/*category END*/
+		/*cart*/
+		.info {
+			padding-left: 30px;
+		}
+		/*cart END*/
+	}
+	body {
+		.bread-crumbs {
+			display: none;
+		}
 	}
 }
 
@@ -158,5 +181,118 @@
 			margin-bottom: 20px;
 		}
 		/*home END*/
+		/*category*/
+		.item {
+			&-category {
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.h2-category {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		/*category END*/
+		/*cart*/
+		.info {
+			padding-left: 30px;
+		}
+		/*cart END*/
+
+
+		/*castomization*/
+		.customization {
+			&-pick {
+				&-btn {
+					p {
+						margin-top: 10px;
+						font-size: 16px;
+					}
+					a {
+						&>div {
+							width: 60px;
+							height: 60px;
+							background-size: cover;
+							margin-top: 10px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			&-filter {
+				&-form {
+					form {
+						margin-left: 0;
+						margin-right: 0;
+					}
+					.my-hidden {
+						margin-right: 0;
+					}
+					&-more  {
+						margin-right: 0px;
+						margin-left: 10px;
+						right: 0;
+					}
+				}
+			}
+			&-chosen {
+				overflow: hidden;
+				margin-right: -10px;
+				margin-left: -10px;
+				&-header {
+					padding-left: 10px;
+					padding-right: 10px;
+					display: none;
+				}
+				&-body {
+					border: none;
+					padding-left: 10px;
+					padding-right: 10px;
+					margin-bottom: 0;
+					.my-flex  .my-flex  {
+						flex-direction: column;
+					}
+					.b-bottom {
+						flex-direction: column;
+						&:after {
+							content: none;
+						}
+					}
+				}
+				&-item {
+					flex-direction: row !important;
+					&.with-img {
+						flex-direction: row !important;
+					}
+				}
+				&-total  {
+					margin-top: 0;
+					margin-left: -10px;
+					margin-right: -10px;
+					text-align: center;
+					width: ~'calc(100% + 20px)';
+					h3 {
+						margin: 10px 0;
+					}
+					.btn {
+						margin: 10px 0;
+						background: #77b56b;
+						color: #fff;
+						padding: 8px 25px 9px;
+						&:hover,&:focus {
+							background: #77b56b;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		/*castomization END*/
+	}
+	body {
+		.bread-crumbs {
+			display: none;
+		}
 	}
 }

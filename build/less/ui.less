@@ -5,6 +5,13 @@
 		display: inline-block;
 		background: url(../img/icons/cusomization-icon-info.png) center center no-repeat;
 	}
+	&.view {
+		width: 18px;
+		height: 11px;
+		display: inline-block;
+		margin-top: 5px;
+		background: url(../img/icons/view.png) center center no-repeat;
+	}
 	&.remove {
 		width: 10px;
 		height: 10px;
@@ -16,14 +23,22 @@
 		height: 12px;
 		display: inline-block;
 		background: url('../img/icons/expand-icon-brn-@2x.png') center center no-repeat;
-		background-size: cover;
+		background-size: cover !important;
+		&.white {
+			background: url('../img/icons/expand-icon-brn-@2x.png') center center no-repeat;
+			background-size: cover !important;
+		}
 	}
 	&.expand-off {
 		width: 12px;
 		height: 12px;
 		display: inline-block;
 		background: url('../img/icons/close-icon-brn-@2x.png') center center no-repeat;
-		background-size: cover;
+		background-size: cover !important;
+		&.white {
+			background: url('../img/icons/close-icon-wht-@2x.png') center center no-repeat;
+			background-size: cover !important;
+		}
 	}
 	&.tips {
 		width: 14px;
@@ -31,6 +46,9 @@
 		display: inline-block;
 		background: url('../img/icons/tips.png') center center no-repeat;
 	}
+}
+* {
+	outline: none !important;
 }
 .my {
 	&-flex {

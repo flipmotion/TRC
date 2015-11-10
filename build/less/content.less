@@ -111,24 +111,22 @@ body {
 		}
 	}
 	.info {
-		margin-top: 35px;
-		>div {
-			display: table-row;
-			img,p {
-				display: table-cell;
-				vertical-align: top;
+		&>a {
+			display: flex;
+			align-items: center;
+			margin-bottom: 30px;
+			&:hover,&:focus {
+				text-decoration: none;
 			}
-			img {
-				margin-right: 20px;
+			&>div {
+				&:first-child {
+					padding-right: 20px;
+				}
 			}
 			p {
 				font-size: 18px;
-				padding-bottom: 22px;
+				margin-bottom: 0;
 				color: @gray;
-				span {
-					padding-top: 22px;
-					display: block;
-				}
 			}
 		}
 	}
@@ -384,6 +382,96 @@ body {
 							.tr;
 							&:hover,&:focus {
 								
+							}
+						}
+					}
+				}
+				&-for-mobile {
+					&-item {
+						.b-bottom {
+							border-bottom: 1px solid #eceae8;
+						}
+						.btn-green {
+							display: flex;
+							justify-content: center;
+							width: 100%;
+							background: #86c77a;
+							margin: 0;
+							color: #fff;
+							.tr;
+							font-size: 26px;
+							position: relative;
+							&>span {
+								&:first-child {
+									text-indent: 10px;
+								}
+								&:last-child {
+									font-size: 0;
+									position: absolute;
+									right: 10px;
+									top: 50%;
+									transform:translateY(-50%);
+								}
+							}
+							.open {
+								display:  none;
+							}
+							.closed {
+								display: inline-block;
+							}
+							&.collapsed {
+								.open {
+									display: inline-block;
+								}
+								.closed {
+									display: none;
+								}
+							}
+						}
+						.btn-inner  {
+							background: 0 0;
+							display: flex;
+							justify-content: space-between;
+							width: 100%;
+							padding: 0px 10px 0px 0px;
+							color: #a2d285;
+							.tb;
+							.open {
+								display:  none;
+							}
+							.closed {
+								display: inline-block;
+							}
+							&.collapsed {
+								color: @light-gray;
+								.tr;
+								.open {
+									display: inline-block;
+								}
+								.closed {
+									display: none;
+								}
+							}
+						}
+						ul {
+							padding-left: 50px;
+							margin-top: 10px;
+							ul {
+								padding-left: 20px;
+								padding-bottom: 1px;
+								li {
+									&:last-child {
+										margin-bottom: 0;
+									}
+								}
+							}
+							li {
+								list-style: none;
+								margin-bottom: 12px;
+								a {
+									font-size: 16px;
+									color: @light-gray;
+								}
 							}
 						}
 					}
