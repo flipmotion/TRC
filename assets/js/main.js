@@ -40,6 +40,16 @@ $(function() {
     });
     $( "ul, li" ).disableSelection();
 });
+$(function() {
+    $('[data-item="offcanvas-menu"]').click(function(event){
+        $('html').toggleClass('nav-active');
+        event.preventDefault();
+    });
+    $('.close-nav').click(function(event){
+        $('html').toggleClass('nav-active');
+        event.preventDefault();
+    });
+});
 function menuTop(){
 	if ( $(this).scrollTop() > 10 && !$('.header').hasClass('open') ) {
 		$('.header').addClass('fix-header');
