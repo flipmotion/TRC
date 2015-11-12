@@ -72,7 +72,7 @@ body {
 		color: @light-gray;
 		margin-bottom: 15px;
 	}
-	form {
+	.contact-form {
 		background-color: #f7f5f2;
 		padding: 38px 33px;
 		margin: 35px 0 85px;
@@ -110,23 +110,27 @@ body {
 			}
 		}
 	}
-	.info {
-		&>a {
-			display: flex;
-			align-items: center;
-			margin-bottom: 30px;
-			&:hover,&:focus {
-				text-decoration: none;
+	.contact-info {
+		margin-top: 35px;
+		margin-bottom: 20px;
+		>div {
+			display: table-row;
+			img,p {
+				display: table-cell;
+				vertical-align: top;
+				margin-top: 4px;
 			}
-			&>div {
-				&:first-child {
-					padding-right: 20px;
-				}
+			img {
+				margin-right: 20px;
 			}
 			p {
 				font-size: 18px;
-				margin-bottom: 0;
+				padding-bottom: 22px;
 				color: @gray;
+				span {
+					padding-top: 22px;
+					display: block;
+				}
 			}
 		}
 	}
@@ -134,6 +138,11 @@ body {
 		font-size: 18px;
 		.rr;
 		color: @gray;
+		margin: 10px 0 31px;
+	}
+	.map {
+		width: 320px;
+		height: 250px;
 	}
 	/*end contact*/
 	/*card*/
@@ -194,6 +203,26 @@ body {
 		color: @gray;
 		span {
 			display: block;
+		}
+	}
+	.info {
+		&>a {
+			display: flex;
+			align-items: center;
+			margin-bottom: 30px;
+			&:hover,&:focus {
+				text-decoration: none;
+			}
+			&>div {
+				&:first-child {
+					padding-right: 20px;
+				}
+			}
+			p {
+				font-size: 18px;
+				margin-bottom: 0;
+				color: @gray;
+			}
 		}
 	}
 	/*end card*/
