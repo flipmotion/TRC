@@ -6,7 +6,14 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
-
+    $('[data-item="slimScroll"]').slimScroll({
+        position: 'right',
+        railVisible: true,
+        alwaysVisible: true,
+        color: '#e1e0de',
+        railColor: '#fff',
+        size: '10px'
+    });
 	menuTop();
 	$(window).scroll(function () {
 		var scroll_r = $(this).scrollTop();
