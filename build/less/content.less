@@ -436,6 +436,8 @@ body {
 							text-indent: 0;
 							 display: table;
 						    .center-block;
+						    flex-grow: inherit;
+							text-align: center;
 						}
 						.btn-green {
 							&.collapsed {
@@ -546,6 +548,8 @@ body {
 							&>span {
 								&:first-child {
 									text-indent: 10px;
+									flex-grow: 1;
+									text-align: center;
 								}
 								&:last-child {
 									font-size: 0;
@@ -577,6 +581,10 @@ body {
 							width: 100%;
 							padding: 0px 10px 0px 0px;
 							color: #a2d285;
+							span:first-child {
+								flex-grow: 1;
+								text-align: left;
+							}
 							.tb;
 							.open {
 								display:  none;
@@ -755,6 +763,10 @@ body {
 							font-size: 18px;
 							.tb;
 							color: #fff;
+							&:first-child {
+								flex-grow: 1;
+								text-align: left;
+							}
 						}
 					}
 					.choice-type {
